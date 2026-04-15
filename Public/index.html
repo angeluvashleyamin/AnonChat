@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AnonChat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>AnonChat</h2>
+            <span id="msg-counter">0 / 100 messages</span>
+        </div>
+
+        <div id="messages"></div>
+        <div id="limit-notice">Message limit reached. Start a new session to continue.</div>
+
+        <form id="form">
+            <input id="input" autocomplete="off" placeholder="Type a message…" />
+            <button id="send-btn">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
